@@ -72,9 +72,7 @@ export const verifySecret = async ({ accountId, password, }: { accountId: string
 export const getCurrentUser = async () => {
   try {
     const { databases, account } = await createSessionClient();
-
     const result = await account.get();
-
     const user = await databases.listDocuments(
       appwriteConfig.databaseId,
       appwriteConfig.usersCollectionId,
