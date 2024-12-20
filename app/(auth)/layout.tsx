@@ -16,13 +16,13 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                             This is a place where you can store all your documents.
                         </p>
                     </div>
-                    <Image src="/assets/images/files.png" alt="Files" width={342} height={342} className="transition-all hover:rotate-2 hover:scale-105" />
+                    <Image src="/assets/images/files.png" alt="Files" width={342} height={342} className="transition-all hover:rotate-2 hover:scale-110" />
                 </div>
             </section>
             <section className="flex flex-1 flex-col items-center bg-white p-4 py-10 lg:justify-center lg:p-10 lg:py-0">
                 <div className="mb-16 lg:hidden flex items-center">
                     <Image src="/assets/icons/logo-brand.svg" alt="logo" width={82} height={82} className="" />
-                    <h1 className="font-poppins font-[500] text-[37.42px] leading-[56.12px] text-[#FA7275]"><span className="font-semibold text-6xl">C</span>loud<span className="font-semibold text-6xl">H</span>aven</h1>
+                    <h1 className="font-poppins font-[500] text-[37.42px] leading-[56.12px] text-brand"><span className="font-semibold text-6xl">C</span>loud<span className="font-semibold text-6xl">H</span>aven</h1>
                 </div>
                 {children}
             </section>
