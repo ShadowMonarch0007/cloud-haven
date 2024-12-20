@@ -37,12 +37,14 @@ const Sidebar = ({ fullName, avatar, email }: Props) => {
                         </Link>
                     ))}
                 </ul>
-                <Image src="/assets/images/files-2.png" alt='logo' width={506} height={418} className='w-full' />
-                <div className='sidebar-user-info'>
-                    <Image src={avatarPlaceholderUrl} alt='avator' width={44} height={44} className='sidebar-user-avatar' />
-                    <div className='hidden lg:block'>
-                        <p className='subtitle-2 capitalize'>{fullName}</p>
-                        <p className='caption'>{email}</p>
+                {/* <Image src="/assets/images/files-2.png" alt='logo' width={506} height={418} className='w-full' /> */}
+                <div className='flex h-2/5 w-full items-end'>
+                    <div className='sidebar-user-info '>
+                        <Image src={avatarPlaceholderUrl} alt='avator' width={44} height={44} className='sidebar-user-avatar' />
+                        <div className='hidden lg:block'>
+                            <p className='subtitle-2 capitalize'>{fullName}</p>
+                            <p className='caption'>{email}</p>
+                        </div>
                     </div>
                 </div>
             </nav>
