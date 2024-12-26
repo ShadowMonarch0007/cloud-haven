@@ -58,7 +58,7 @@ const Dashboard = async () => {
                     <p className="recent-file-name">{file.name}</p>
                     <FormattedDateTime date={file.$createdAt} className="caption" />
                   </div>
-                  <ActionDropdown file={file} />
+                  <div className="!w-1/4 flex justify-end"><ActionDropdown file={file} /></div>
                 </div>
               </Link>
             ))}
