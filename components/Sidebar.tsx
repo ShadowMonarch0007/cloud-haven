@@ -26,7 +26,7 @@ const Sidebar = ({ fullName, avatar, email }: Props) => {
                 </div>
                 <Image src="assets/icons/logo-brand.svg" width={52} height={52} className='lg:hidden' alt='logo' />
             </Link>
-            <nav className='sidebar-nav'>
+            <nav className='sidebar-nav flex flex-col justify-between'>
                 <ul className="flex flex-1 flex-col gap-6">
                     {navItems.map(({ url, name, icon }) => (
                         <Link key={name} href={url} className='lg:w-full'>
@@ -38,7 +38,7 @@ const Sidebar = ({ fullName, avatar, email }: Props) => {
                     ))}
                 </ul>
                 {/* <Image src="/assets/images/files-2.png" alt='logo' width={506} height={418} className='w-full' /> */}
-                <div className='flex h-2/5 w-full items-end'>
+                <div className='flex w-full items-end'>
                     <div className='sidebar-user-info '>
                         <Image src={avatarPlaceholderUrl} alt='avator' width={44} height={44} className='sidebar-user-avatar' />
                         <div className='hidden lg:block'>
