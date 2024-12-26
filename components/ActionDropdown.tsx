@@ -77,7 +77,7 @@ const ActionDropdown = ({ file }: { file: Models.Document }) => {
 
         return (
             <DialogContent className='shad-dialog-button'>
-                <DialogHeader className='flex fle-col gap-3'>
+                <DialogHeader className='flex flex-col gap-3'>
                     <DialogTitle className='text-center text-light-100'>{label}</DialogTitle>
                     {value === 'rename' && (
                         <Input type='text' value={name} onChange={(e) => setName(e.target.value)} />
@@ -94,7 +94,7 @@ const ActionDropdown = ({ file }: { file: Models.Document }) => {
                     )}
                 </DialogHeader>
                 {['rename', 'delete', 'share'].includes(value) && (
-                    <DialogFooter className='flex flex-col gap-3 md:flex-row'>
+                    <DialogFooter className='flex flex-col gap-3 md:flex-row '>
                         <button onClick={closeAllModals} className='modal-cancel-button'>Cancel</button>
                         <button onClick={handleAction} className='modal-submit-button flex flex-col gap-1 items-center justify-center'>
                             {isLoading ? (
